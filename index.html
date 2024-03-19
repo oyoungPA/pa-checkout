@@ -17,6 +17,7 @@
      padding-top: 30px !important;
      padding-bottom: 30px !important;
      margin-bottom: 30px !important;
+     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
    }
 
    .address-edit {
@@ -166,6 +167,7 @@
    .order-wizard-shiphawk-module {
      border-radius: 10px !important;
      background-color: white !important;
+     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
    }
 
    .order-wizard-shipmethod-module-message {
@@ -173,7 +175,7 @@
    }
 
    #name-input {
-     width: 50% !important;
+     width: 100% !important;
    }
 
    #phone-input {
@@ -192,6 +194,7 @@
      border-radius: 10px !important;
      background-color: #E3FEFF !important;
      border: none !important;
+     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
    }
 
    .address-edit-fields-group-input-zip {
@@ -263,7 +266,7 @@
      /* margin-bottom: 20px; */
      }
    #ffl-name-input {
-     width: 50% !important;
+     width: 100% !important;
    }
    #ffl-zip-input {
      width: 50% !important;
@@ -284,6 +287,7 @@
    .order-wizard-paymentmethod-selector-module {
      background-color: white !important;
      border-radius: 10px !important;
+     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1); !important;
    }
 
    .paymentinstrument-creditcard-edit {
@@ -346,10 +350,14 @@
       width: 100% !important;
     }
 
-    #bill-name, #bill-zip, #bill-city, #bill-state {
+    #bill-zip, #bill-city, #bill-state {
       width: 50% !important;
     }
 
+    #bill-name {
+      width: 100% !important;
+    }
+    
     #res {
       margin-top: 0px !important;
     }
@@ -357,6 +365,10 @@
     #order-restriction {
       width: 100% !important;
       padding: 0px !important;
+    }
+
+    input.address-edit-fields-group-input, select.global-views-states-group-select {
+      min-width: 0px !important;
     }
 
     .order-wizard-step-content-secondary {
@@ -372,6 +384,7 @@
       box-shadow: none !important;
       border: 0px !important;
       padding: 30px !important;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
     }
 
     .order-wizard-cart-summary-title {
@@ -384,6 +397,19 @@
       padding: 20px !important;
       margin-bottom: 20px !important;
       border: 0px !important;
+      border-radius: 10px !important;
+    }
+
+    .login-register-register-form-controls-group {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    #disclaimer {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .order-wizard-promocodeform-expander-head {
+      margin-bottom: 0px !important;
     }
 
     #discl-tex {
@@ -392,23 +418,36 @@
       margin-top: 10px !important;
     }
 
+    /* .order-wizard-promocodeform {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
+      border-radius: 10px !important;
+    } */
+
     .order-wizard-paymentmethod-giftcertificates-module-expander-head-toggle {
       background-color: white !important;
       border-radius: 10px !important;
       border: 0px !important;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
     }
 
     .order-wizard-promocodeform-expander-head-toggle, #unfulfilled-items-ship {
       border: 0px !important;
     }
 
+    #promo {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
+      border-radius: 10px !important;
+    }
+
     #unfulfilled-items-ship {
       border-radius: 10px;
       padding: 30px;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
     }
     .order-wizard-submitbutton-module-button {
       background-color: #CE0E2D !important;
       border-radius: 10px !important;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) !important;
     }
 
     .order-wizard-submitbutton-module-edit-cart-link {
@@ -619,13 +658,19 @@
                                                                                       <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="fullname"> Full Name </label> <text class="required-text">*required</text> </div>
                                                                                       <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZfullname" type="text" class="address-edit-fields-group-input" id="fullname" name="fullname" value="Olivia Young"> </div>
                                                                                   </div>
-                                                                                  <div class="address-edit-fields-group" data-input="zip" id="zip-input" data-validation="control-group">
-                                                                                      <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="zip"> Zip Code </label> <text class="required-text">*required</text> </div>
-                                                                                      <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZzip" type="text" class="address-edit-fields-group-input-zip ui-autocomplete-input" id="zip" name="zip" value="" placeholder="77449" data-type="zip"> <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
-                                                                                      </div>
+                                                                               
+                                                                              </div>
+                                                                              <div class="address-edit-fields-group" data-input="addr1" data-validation="control-group">
+                                                                                  <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="addr1"> Address</label> <text class="required-text">*required</text> </div>
+                                                                                  <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZaddr1" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr1" name="addr1" placeholder="1234 Main Street" value=""><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 1234 Main Street</p> -->
                                                                                   </div>
                                                                               </div>
-
+                                                                              <div class="address-edit-fields-group address-edit-fields-group-big" data-input="addr2" data-validation="control-group"> <label for="addr2">
+                                                                                      <!-- <p class="address-edit-fields-addr2-optional-label">(optional)</p> -->
+                                                                                  </label>
+                                                                                  <div data-validation="control"> <input autocomplete="ZZZaddr2" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr2" name="addr2" value="" placeholder="Apt. 3 or Suite #1516 (optional)"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: Apt. 3 or Suite #1516</p> -->
+                                                                                  </div>
+                                                                              </div>
                                                                               
                                                                               <div class="city-state-wrapper">
                                                                                   <div class="parent-input-wrapper">
@@ -702,19 +747,15 @@
                                                                                                   <option value="WY"> Wyoming </option>
                                                                                               </select> </div>
                                                                                       </div>
+                                                                                    <div class="address-edit-fields-group" data-input="zip" id="zip-input" data-validation="control-group">
+                                                                                          <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="zip"> Zip Code </label> <text class="required-text">*required</text> </div>
+                                                                                          <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZzip" type="text" class="address-edit-fields-group-input-zip ui-autocomplete-input" id="zip" name="zip" value="" placeholder="77449" data-type="zip"> <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
+                                                                                          </div>
+                                                                                      </div>
+                                                                                    </div>
                                                                                   </div> <!-- TEMPLATE ENDS: global_views_states -->
-                                                                              </div>
-                                                                              <div class="address-edit-fields-group" data-input="addr1" data-validation="control-group">
-                                                                                                  <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="addr1"> Address</label> <text class="required-text">*required</text> </div>
-                                                                                                  <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZaddr1" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr1" name="addr1" placeholder="1234 Main Street" value=""><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 1234 Main Street</p> -->
-                                                                                                  </div>
-                                                                                              </div>
-                                                                                              <div class="address-edit-fields-group address-edit-fields-group-big" data-input="addr2" data-validation="control-group"> <label for="addr2">
-                                                                                                      <!-- <p class="address-edit-fields-addr2-optional-label">(optional)</p> -->
-                                                                                                  </label>
-                                                                                                  <div data-validation="control"> <input autocomplete="ZZZaddr2" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr2" name="addr2" value="" placeholder="Apt. 3 or Suite #1516 (optional)"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: Apt. 3 or Suite #1516</p> -->
-                                                                                                  </div>
-                                                                                              </div>
+                                                                              
+                                                                             
                                                                                               <div class="address-edit-fields-group" data-input="phone" data-validation="control-group" id="phone-input">
                                                                                                   <div class="input-wrapper"> <label class="address-edit-fields-group-label" for="phone"> Phone Number </label> <text class="required-text">*required</text> </div>
                                                                                                   <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZphone" type="tel" class="address-edit-fields-group-input" id="phone" name="phone" value="" data-action="inputphone" placeholder="555-965-7895"> <!-- <p class="address-edit-fields-input-help">Example: 555-123-1234</p> -->
@@ -742,13 +783,10 @@
                                                               <!-- <div class="input-wrapper"> --> <label class="address-edit-fields-group-label" for="custbody_ffl_name"> FFL ID, Name or Phone Number </label>
                                                               <div class="address-edit-fields-group-form-controls" data-validation="control"><input type="text" class="address-edit-fields-group-input" id="custbody_ffl_name" name="custbody_ffl_name" value="" autocomplete="ZZZcustbody_ffl_name"></div> <!-- </div> -->
                                                           </div>
-                                                          <div class="address-edit-fields-group" data-input="custbody_ffl_shipping_zip" data-validation="control-group" id="ffl-zip-input">
-                                                              <!-- <div class="input-wrapper"> --> <label class="address-edit-fields-group-label" for="custbody_ffl_shipping_zip"> Zip Code </label>
-                                                              <div class="address-edit-fields-group-form-controls" data-validation="control">
-                                                                  <!-- </div> --> <input autocomplete="ZZZcustbody_ffl_shipping_zip" type="text" class="address-edit-fields-group-input-zip" id="custbody_ffl_shipping_zip" name="custbody_ffl_shipping_zip" value="" data-type="zip" placeholder="77449"> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
-                                                              </div>
-                                                          </div>
+                                                         
                                                       </div>
+                                                          <div class="address-edit-fields-group" data-input="custbody_ffl_shipping_address_1" data-validation="control-group"> <label class="address-edit-fields-group-label" for="custbody_ffl_shipping_address_1"> Address </label>
+                                                          <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZcustbody_ffl_shipping_address_1" type="text" class="address-edit-fields-group-input" id="custbody_ffl_shipping_address_1" placeholder="1234 Main Street" name="custbody_ffl_shipping_address_1" value="">
                                                       <div class="parent-input-wrapper">
                                                           <div class="address-edit-fields-group" id="city-input" data-input="custbody_ffl_shipping_city" data-validation="control-group"> <label class="address-edit-fields-group-label" for="custbody_ffl_shipping_city"> City </label>
                                                               <div class="address-edit-fields-group-form-controls" data-validation="control"><input type="text" placeholder="Houston" autocomplete="ZZZcustbody_ffl_shipping_city" class="address-edit-fields-group-input" id="custbody_ffl_shipping_city" name="custbody_ffl_shipping_city" value=""></div>
@@ -815,9 +853,14 @@
                                                                       <option value="WY"> Wyoming </option>
                                                                   </select> </div> <!-- TEMPLATE ENDS: global_views_states -->
                                                           </div>
+                                                        <div class="address-edit-fields-group" data-input="custbody_ffl_shipping_zip" data-validation="control-group" id="ffl-zip-input">
+                                                            <!-- <div class="input-wrapper"> --> <label class="address-edit-fields-group-label" for="custbody_ffl_shipping_zip"> Zip Code </label>
+                                                            <div class="address-edit-fields-group-form-controls" data-validation="control">
+                                                                <!-- </div> --> <input autocomplete="ZZZcustbody_ffl_shipping_zip" type="text" class="address-edit-fields-group-input-zip" id="custbody_ffl_shipping_zip" name="custbody_ffl_shipping_zip" value="" data-type="zip" placeholder="77449"> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
+                                                            </div>
+                                                        </div>
                                                       </div>
-                                                      <div class="address-edit-fields-group" data-input="custbody_ffl_shipping_address_1" data-validation="control-group"> <label class="address-edit-fields-group-label" for="custbody_ffl_shipping_address_1"> Address </label>
-                                                          <div class="address-edit-fields-group-form-controls" data-validation="control"> <input autocomplete="ZZZcustbody_ffl_shipping_address_1" type="text" class="address-edit-fields-group-input" id="custbody_ffl_shipping_address_1" placeholder="1234 Main Street" name="custbody_ffl_shipping_address_1" value="">
+                                                     
                                                               <div class="order-wizard-special-instructions-container">
                                                                   <div class="order-wizard-special-instructions-label"><label class="address-edit-fields-group-label">Special Instructions</label></div> <textarea rows="4" cols="40" name="custbodyspecialinstructions" id="custbodyspecialinstructions" placeholder=""></textarea>
                                                               </div> <!-- <p class="address-edit-fields-input-help">Example: 1234 Main Street</p> -->
@@ -996,14 +1039,19 @@
 
 
 
-                          <div class="address-edit-fields-group" data-input="zip" data-validation="control-group" id="bill-zip">
-                                                                                      <div class="input-wrapper">
-                                                                                          <label class="address-edit-fields-group-label" for="zip"> Zip Code </label> 
-                                                                                          <text class="required-text">*required</text> 
-                                                                                      </div>
-                                                                                      <div class="address-edit-fields-group-form-controls" data-validation="control">
-                                                                                          <input autocomplete="ZZZzip" type="text" class="address-edit-fields-group-input-zip ui-autocomplete-input" id="zip" name="zip" value="" data-type="zip" placeholder="77459"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
-                                                                                      </div>
+                      
+                                                                              </div>
+                                                                              <div class="address-edit-fields-group" data-input="addr1" data-validation="control-group">
+                                                                                <div class="input-wrapper">
+                                                                                <label class="address-edit-fields-group-label" for="addr1"> Address</label>
+                                                                                <text class="required-text">*required</text> 
+                                                                                </div>
+                                                                                  <div class="address-edit-fields-group-form-controls" data-validation="control"><input autocomplete="ZZZaddr1" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr1" name="addr1" value="" placeholder="1234 Main Street"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="address-edit-fields-group address-edit-fields-group-big" data-input="addr2" data-validation="control-group"><label for="addr2">
+                                                                                  </label>
+                                                                                  <div data-validation="control"><input autocomplete="ZZZaddr2" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr2" name="addr2" value="" placeholder="Apt. 3 or Suite #1516 (optional)"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
                                                                                   </div>
                                                                               </div>
                                                                               <div class="parent-input-wrapper">
@@ -1093,20 +1141,17 @@
                                                                                           <option value="WY"> Wyoming </option>
                                                                                       </select></div>
                                                                                   </div>
+                                                                                <div class="address-edit-fields-group" data-input="zip" data-validation="control-group" id="bill-zip">
+                                                                                    <div class="input-wrapper">
+                                                                                        <label class="address-edit-fields-group-label" for="zip"> Zip Code </label> 
+                                                                                        <text class="required-text">*required</text> 
+                                                                                    </div>
+                                                                                    <div class="address-edit-fields-group-form-controls" data-validation="control">
+                                                                                        <input autocomplete="ZZZzip" type="text" class="address-edit-fields-group-input-zip ui-autocomplete-input" id="zip" name="zip" value="" data-type="zip" placeholder="77459"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> <!-- <p class="address-edit-fields-input-help">Example: 94117</p> -->
+                                                                                    </div>
+                                                                                </div>
                                                                               </div>
-                                                                                <div class="address-edit-fields-group" data-input="addr1" data-validation="control-group">
-                                                                                  <div class="input-wrapper">
-                                                                                  <label class="address-edit-fields-group-label" for="addr1"> Address</label>
-                                                                                  <text class="required-text">*required</text> 
-                                                                                  </div>
-                                                                                    <div class="address-edit-fields-group-form-controls" data-validation="control"><input autocomplete="ZZZaddr1" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr1" name="addr1" value="" placeholder="1234 Main Street"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="address-edit-fields-group address-edit-fields-group-big" data-input="addr2" data-validation="control-group"><label for="addr2">
-                                                                                    </label>
-                                                                                    <div data-validation="control"><input autocomplete="ZZZaddr2" type="text" class="address-edit-fields-group-input ui-autocomplete-input" id="addr2" name="addr2" value="" placeholder="Apt. 3 or Suite #1516 (optional)"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                                                                                    </div>
-                                                                                </div>
+                                                                                
 
                                                                                 <div class="address-edit-fields-group" data-input="phone" data-validation="control-group">
                                                                                   <div class="input-wrapper">
@@ -1215,7 +1260,7 @@
                                                     <div data-cms-area="order_wizard_paymentmethod_giftcertificates_cms_area_1" data-cms-area-filters="page_type"></div>
                                                 </div> <!-- TEMPLATE ENDS: order_wizard_paymentmethod_giftcertificates_module -->
                                               </article>
-                                              <article class="module-rendered">
+                                              <article class="module-rendered" id="promo">
                                                   <div data-type="alert-placeholder-module"></div><!-- TEMPLATE STARTS: order_wizard_promocodeform-->
                                                   <div class="order-wizard-promocodeform">
                                                       <div class="order-wizard-promocodeform-expander-head"><a class="order-wizard-promocodeform-expander-head-toggle collapsed" data-toggle="collapse" data-target="#order-wizard-promocode" aria-expanded="false" aria-controls="order-wizard-promocode"> Have a Promo Code? <i class="order-wizard-promocodeform-tooltip" data-toggle="tooltip" title="" data-original-title="<b>Promo Code</b><br>To redeem a promo code, simply enter your information and we will apply the offer to your purchase during checkout."></i><i class="order-wizard-promocodeform-expander-toggle-icon"></i></a></div>
